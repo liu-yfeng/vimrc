@@ -27,3 +27,75 @@ func! CompileRunGcc()
         exec "!firefox %.html &"
     endif
 endfunc
+
+" 显示行号
+" set number
+
+" 突出当前显示行
+set cursorline
+
+" 设置 tab 4个空格
+" set tabstop=4
+set ts=4
+
+" 设置“移位操作”（例如“>>”或“<<”）的空格数量
+set shiftwidth=4
+
+" 如果你更喜欢使用空格而不是制表符，那么在按下 Tab
+" 键时将插入空格。对于依赖制表符而不是空格的语言（如
+" Python）这可能是个问题。对于这种情况，你可以根据文件类型来设置这个选项
+set expandtab
+
+" 自动对齐文件中行的缩进
+set autoindent
+
+" 智能缩进使用了代码语法和样式来对齐
+set smartindent
+
+" 在文本超过最大宽度时换行
+set textwidth=80
+
+" 根据距离右边的列数来换行
+set wrapmargin=2
+
+" 在遍历文件时识别括弧的起始和结束位置
+set showmatch
+
+" 在文件中高亮显示搜索关键词
+set hlsearch
+
+" 进行增量搜索
+set incsearch
+
+" 搜索时忽略大小写（很多用户选择不使用这个命令，不过可以在你认为有用时设置它）
+" set ignorecase
+
+" 在设置了 ignorecase 和 smartcase 并且搜索关键字包含大写字母时，搜索时不考虑 ignorecase
+" set smartcase
+
+" 为了获得更好的视觉体验，你可能更喜欢将光标放在中间的位置而不是第一行。设置下面的选项可以将光标位置设置为第 5 行
+" 提示：如果你设置了 nowrap，那么 set sidescrolloff 会非常有用
+" set scrolloff=5
+
+" 在 vim 屏幕底部显示永久的状态栏，用于显示文件名、行号、列号等
+" set laststatus=2
+
+" vim 有一个内置的拼写检查器，在编辑文本和些代码时非常有用。vim 会识别文件类型并检查代码注释的拼写情况。可以使用以下命令打开英语拼写检查
+" set spell spelllang=en_us
+
+" 禁用备份文件：如果启用了这个选项，vim 将为上一次编辑创建备份。如果你不想要这个功能，请像下面那样将其禁用。备份文件的文件名末尾有个波浪号（~）
+" set nobackup
+
+" 禁用交换文件：如果启用了这个选项，vim 会创建一个交换文件，直到你开始编辑文件。在发生崩溃或冲突时，交换文件用于恢复文件。交换文件是隐藏文件，以. 开头，并以.swp 结尾
+" set noswapfile
+
+" 假设你需要在同一个 vim 会话中编辑多个文件，并在它们之间切换。问题是，工作目录通常是你打开第一个文件的那个目录。所以，将工作目录自动切换到正在编辑的文件所在的目录是很有用的。可以启用这个选项
+" set autochdir
+
+" vim 维护了一个撤消历史记录，允许你撤消更改。默认情况下，历史记录只在文件打开时处于活动状态。vim 通过了一个非常好用的特性，即使在文件关闭后也可以维护撤消历史记录，这意味着即使在保存、关闭和重新打开文件后，你仍然可以撤消更改。撤消文件是隐藏文件，扩展名为.un~
+" set undofile
+
+" 设置声音警报铃声（如果你试图滚动超过行尾，会发出警告）
+" set errorbells
+" 如果你愿意，还可以设置视觉警报
+" set visualbell
